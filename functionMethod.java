@@ -20,10 +20,18 @@ public class functionMethod{
         int product = x * y;
         return product;
     }
+    // 4. find the factorial of N number
+    public static int factorial(int n){
+        int f=1;
+        for(int i=1; i<=n; i++){
+            f = f * i;
+        }
+        return f;
+    }
 
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
-
+        System.out.print("Enter First Number : " ); int num1 = sc.nextInt();
         /* System.out.print("Enter First Number : " ); int num1 = sc.nextInt();
         System.out.print("Enter First Number : "); int num2 = sc.nextInt();
         calSum(num1, num2); */
@@ -46,9 +54,15 @@ public class functionMethod{
         swap(a, b);
         */
 
-        // multiply of two numbers || call method with return type
-       int product =  multiply(120, 9);
-       System.out.println("the product of two number is : " + product);
+        // 3. multiply of two numbers || call method with return type
+       /*  int product =  multiply(120, 9);
+       System.out.println("the product of two number is : " + product); */
+
+       // 4. find the factorial of number n
+       int factValue = factorial(num1);
+       System.out.println("Value of factorial of a number :  "+ num1 + " is " + factValue);
+    
+       
        
 
     }
