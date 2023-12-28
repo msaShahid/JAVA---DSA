@@ -14,7 +14,11 @@ public class functionMethod{
         num2 = temp;
         System.out.println("Before swaping numbers num1 is 50 and num2 is 75");
         System.out.println("After swaping numbers num1 is "+ num1 + " and num2 is "+ num2);
-
+    }
+    // 3. Find the product of x and y
+    public static int multiply(int x , int y) {
+        int product = x * y;
+        return product;
     }
 
     public static void main(String args[]){
@@ -37,9 +41,14 @@ public class functionMethod{
     */
 
         //Swap Number || call by reference
-        int a = 50;
+      /* int a = 50;
         int b = 75;
         swap(a, b);
+        */
+
+        // multiply of two numbers || call method with return type
+       int product =  multiply(120, 9);
+       System.out.println("the product of two number is : " + product);
        
 
     }
