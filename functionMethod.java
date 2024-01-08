@@ -29,9 +29,20 @@ public class functionMethod{
         return f;
     }
 
+    // 5. Bionmial Coefficient
+    public static int bioCoeff(int n, int r){
+        int fact_n = factorial(n);
+        int fact_r = factorial(r);
+        int fact_diffs = factorial(n - r);
+
+        int bioCoeff = fact_n / (fact_r * fact_diffs);
+        return bioCoeff ;
+
+    }
+
     public static void main(String args[]){
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter First Number : " ); int num1 = sc.nextInt();
+       // Scanner sc = new Scanner(System.in);
+       // System.out.print("Enter First Number : " ); int num1 = sc.nextInt();
         /* System.out.print("Enter First Number : " ); int num1 = sc.nextInt();
         System.out.print("Enter First Number : "); int num2 = sc.nextInt();
         calSum(num1, num2); */
@@ -59,9 +70,14 @@ public class functionMethod{
        System.out.println("the product of two number is : " + product); */
 
        // 4. find the factorial of number n
-       int factValue = factorial(num1);
+      /* int factValue = factorial(num1);
        System.out.println("Value of factorial of a number :  "+ num1 + " is " + factValue);
+       */
     
+       // 5. Bionmial Coefficient
+        System.out.println(bioCoeff(5,2));
+    
+
        
        
 
