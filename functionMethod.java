@@ -39,6 +39,11 @@ public class functionMethod{
         return bioCoeff ;
     }
 
+    // 6. Method Overloading: Overloading with different parameters and changing data type of arguments
+    public int sum(int a, int b){return a + b;};
+    public static int sum(int a, int b, int c){ return a + b + c;};
+    public float sum(float a, float b){ return a + b;};
+
     public static void main(String args[]){
        // Scanner sc = new Scanner(System.in);
        // System.out.print("Enter First Number : " ); int num1 = sc.nextInt();
@@ -74,8 +79,13 @@ public class functionMethod{
        */
     
        // 5. Bionmial Coefficient
-        System.out.println(bioCoeff(7,2));
+       // System.out.println(bioCoeff(7,2));
     
+       // 6. Function overloading
+       functionMethod calFunc = new functionMethod();
+        System.out.println(calFunc.sum(23,7));
+        System.out.println(calFunc.sum(17,3));
+        System.out.println(calFunc.sum(1.5f,3.5f));
 
        
        
