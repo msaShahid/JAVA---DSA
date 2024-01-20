@@ -44,6 +44,28 @@ public class functionMethod{
     public static int sum(int a, int b, int c){ return a + b + c;};
     public static float sum(float a, float b){ return a + b;};
 
+    // 7. Check is a number prime or not
+    public static boolean isPrime(int n){
+        // n-1 or Math.sqrt(n)
+        if(n == 2){ return true; };
+        for(int i=2; i < Math.sqrt(n); i++){
+            if(n % i == 0){
+                 return false;            
+            }
+        }
+        return true;
+    }
+
+    // 8. Print all the prime number in range [ 7. isPrime function is used here. ]
+    public static void primeInRange(int n){
+        for(int i=2; i<=n; i++){
+            if(isPrime(i)){
+                System.out.print(i + " ");
+            }
+        }
+        
+    }
+
     public static void main(String args[]){
        // Scanner sc = new Scanner(System.in);
        // System.out.print("Enter First Number : " ); int num1 = sc.nextInt();
@@ -82,9 +104,20 @@ public class functionMethod{
        // System.out.println(bioCoeff(7,2));
     
        // 6. Function overloading
-        System.out.println(sum(23,7));
+       /* System.out.println(sum(23,7));
         System.out.println(sum(17,3));
         System.out.println(sum(1.5f,3.5f));
+        */
+
+        // 7. Check is number is prime or not
+     /*  if(isPrime(2) == true){
+            System.out.println("Prime Number");
+        }else{
+            System.out.println("IS not prime number");
+        } */ 
+
+        // 8. Prime Number is Range
+      //  primeInRange(20);
 
        
        
