@@ -40,9 +40,9 @@ public class functionMethod{
     }
 
     // 6. Method Overloading: Overloading with different parameters and changing data type of arguments
-    public int sum(int a, int b){return a + b;};
+    public static int sum(int a, int b){return a + b;};
     public static int sum(int a, int b, int c){ return a + b + c;};
-    public float sum(float a, float b){ return a + b;};
+    public static float sum(float a, float b){ return a + b;};
 
     public static void main(String args[]){
        // Scanner sc = new Scanner(System.in);
@@ -82,10 +82,9 @@ public class functionMethod{
        // System.out.println(bioCoeff(7,2));
     
        // 6. Function overloading
-       functionMethod calFunc = new functionMethod();
-        System.out.println(calFunc.sum(23,7));
-        System.out.println(calFunc.sum(17,3));
-        System.out.println(calFunc.sum(1.5f,3.5f));
+        System.out.println(sum(23,7));
+        System.out.println(sum(17,3));
+        System.out.println(sum(1.5f,3.5f));
 
        
        
